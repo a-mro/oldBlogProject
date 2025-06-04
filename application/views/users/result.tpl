@@ -38,17 +38,17 @@
         }
         ?>
         <?php if(isset($userData)){ ?>
-        <h2>Registed data</h2>
+        <h2>Registered data</h2>
         <div class="formregis">
-            <label>Username</label><input value='<?php if(isset($userData)) echo $userData[' userName']; ?>' type="text"
+            <label>Username</label><input value='<?php if(isset($userData)) echo $userData['userName']; ?>' type="text"
             name="username" disabled><br>
-            <label>Name</label><input value='<?php if(isset($userData)) echo $userData[' firstName']; ?>' type="text"
+            <label>Name</label><input value='<?php if(isset($userData)) echo $userData['firstName']; ?>' type="text"
             name="name" disabled><br>
-            <label>LastName</label><input value='<?php if(isset($userData)) echo $userData[' lastName']; ?>' type="text"
+            <label>LastName</label><input value='<?php if(isset($userData)) echo $userData['lastName']; ?>' type="text"
             name="last_name" disabled><br>
-            <label>Email</label><input value='<?php if(isset($userData)) echo $userData[' email']; ?>' type="text"
+            <label>Email</label><input value='<?php if(isset($userData)) echo $userData['email']; ?>' type="text"
             name="email" disabled><br>
-            <label>Password</label><input value='<?php if(isset($userData)) echo $userData[' password']; ?>'
+            <label>Password</label><input value='<?php if(isset($userData)) echo $userData['password']; ?>'
             type="password" name="password" disabled><br>
         </div>
         <a href="/users/index">Back to index</a>

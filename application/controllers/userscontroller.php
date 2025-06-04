@@ -21,7 +21,7 @@ class UsersController extends Controller
     {
 
         if (!isset($_POST['loginSubmit'])) {
-            header('Location : /users/index');
+            header('Location: /users/index');
         }
 
 
@@ -54,7 +54,7 @@ class UsersController extends Controller
         } catch (Exception $e) {
             $this->_setView('result');
             $this->_view->set('error', 'Login failure!');
-            $this->_view->set('loginerror' . $e->getMessage());
+            $this->_view->set('loginerror', $e->getMessage());
         }
         $login = false;
         return $this->_view->output();

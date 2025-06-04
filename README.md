@@ -14,6 +14,8 @@ This project has been modernised with Composer, Docker and GitHub Actions.
    ```bash
    docker-compose up --build
    ```
+   The Docker image enables Apache's `mod_rewrite` module so the bundled
+   `.htaccess` rules work correctly.
 
 ## Running Tests
 ```bash

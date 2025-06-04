@@ -15,7 +15,8 @@ This project has been modernised with Composer, Docker and GitHub Actions.
    docker-compose up --build
    ```
    The Docker image enables Apache's `mod_rewrite` module so the bundled
-   `.htaccess` rules work correctly.
+   `.htaccess` rules work correctly. It also copies `config/config.example.php`
+   to `config/config.php` so the container starts with a default configuration.
 
 ## Running Tests
 ```bash

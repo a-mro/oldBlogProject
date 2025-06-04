@@ -10,7 +10,7 @@ RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local
 RUN cp config/config.example.php config/config.php
 RUN composer install --no-dev
 RUN a2enmod rewrite \
-    && sed -i 's/AllowOverride None/AllowOverride All/' /etc/apache2/apache2.conf
-RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
+    && sed -i 's/AllowOverride None/AllowOverride All/' /etc/apache2/apache2.conf \
+    && echo "ServerName localhost" >> /etc/apache2/apache2.conf
 EXPOSE 80
 CMD ["apache2-foreground"]

@@ -1,0 +1,23 @@
+{
+    "name": "legacy/blog",
+    "description": "Legacy blog modernized with Composer",
+    "type": "project",
+    "require": {
+        "php": "^8.2",
+        "ezyang/htmlpurifier": "^4.16",
+        "monolog/monolog": "^2.9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.3"
+    },
+    "autoload": {
+        "classmap": [
+            "application/libs/",
+            "application/models/",
+            "application/controllers/"
+        ]
+    },
+    "scripts": {
+        "test": "phpunit"
+    }
+}

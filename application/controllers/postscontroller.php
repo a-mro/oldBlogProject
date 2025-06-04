@@ -1,6 +1,5 @@
 <?php
 session_start();
-require_once HOME . DS . 'application' . DS . 'includes' . DS . 'HTMLPurifier.standalone.php';
 
 class PostsController extends Controller
 {
